@@ -80,7 +80,7 @@ char *get_server_port() {
 }
 
 char *get_param(char *query_string, char *name) {
-	char *url = "http://localhost?"; // just a place holder to maker the parser happy
+	char *url = "https://www.team9.isucdc.com?"; // just a place holder to maker the parser happy
 	char *uri_string = malloc((strlen(url) + strlen(query_string)));
 	strcpy(uri_string,url);
 	strcat(uri_string,query_string);

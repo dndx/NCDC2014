@@ -20,5 +20,6 @@ int add_entry(char *username, char *day, char *minutes_worked);
 int approve_entry(char *username, char *day);
 void render_entries_json(response *res, char *username, char *start_date, char *end_date);
 void dump_tables(response *res);
+char *hmac_hash(char *data);
 
 #endif

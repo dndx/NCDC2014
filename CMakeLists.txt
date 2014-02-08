@@ -32,7 +32,7 @@ ADD_LIBRARY(raphters_static STATIC ${RaphtersSources})
 SET_TARGET_PROPERTIES(raphters_static PROPERTIES LINKER_LANGUAGE C)
 
 ADD_EXECUTABLE(webapp ${WebAppSources})
-TARGET_LINK_LIBRARIES(webapp cgi mysqlclient raphters_static uriparser fcgi unwind dl)
+TARGET_LINK_LIBRARIES(webapp cgi mysqlclient raphters_static uriparser fcgi unwind dl crypto)
 
 # finally need to make binary executable after build process
 execute_process(COMMAND sudo chmod +s webapp)
